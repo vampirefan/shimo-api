@@ -5,6 +5,6 @@ export default defineEventHandler(async (event) => {
   const gitFileUrl = 'https://raw.githubusercontent.com/vampirefan/shimo-api/main/src/pages'
   const body = await readBody(event)
   const fileUrl = `${gitFileUrl + body.path}.vue`
-  const fileContent = await $fetch(fileUrl)
+  const fileContent = await $fetch(fileUrl, { mode: 'no-cors' })
   return fileContent
 })
