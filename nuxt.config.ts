@@ -21,9 +21,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: '/api',
-      sdkBase: 'http://10.102.81.64',
-      sdkAppId: 'sdkAppId',
-      sdkSecret: 'sdkSecret',
+      sdkBase: 'https://office.shimoapi.com',
+      sdkAppId: '6c2f90468a254d6bb1dfefce6e9a91ee', //APP ID: 6c2f90468a254d6bb1dfefce6e9a91ee
+      sdkSecret: 'b1378591a5274f7db6e743e99fffb525', //APP Secret: b1378591a5274f7db6e743e99fffb525 
     },
   },
 
