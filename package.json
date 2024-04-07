@@ -1,0 +1,43 @@
+{
+  "name": "shimo-api",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "anthor": "vampirefan",
+  "packageManager": "yarn@1.22.19",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port=8011 --host --no-qr --open",
+    "preview": "nuxt preview",
+    "commit": "git add . && czg && git push",
+    "release": "bumpp README.md package.json Jenkinsfile src/app.config.ts",
+    "taze": "taze -wIr"
+  },
+  "dependencies": {
+    "@shikijs/monaco": "^1.1.7",
+    "element-plus": "^2.6.1",
+    "file-saver": "^2.0.5",
+    "jose": "^5.2.3",
+    "lxgw-wenkai-webfont": "^1.7.0",
+    "monaco-editor": "^0.46.0",
+    "shiki": "^1.1.7",
+    "shimo-js-sdk": "^1.2.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.0",
+    "@iconify/json": "^2.2.190",
+    "@pinia/nuxt": "^0.5.1",
+    "@unocss/nuxt": "^0.58.5",
+    "@vueuse/nuxt": "^10.9.0",
+    "bumpp": "^9.4.0",
+    "czg": "^1.9.0",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.3",
+    "taze": "^0.13.3",
+    "typescript": "^5.4.2"
+  }
+}

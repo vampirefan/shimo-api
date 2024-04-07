@@ -1,0 +1,22 @@
+@import "admin-vars.css";
+@import "normalize.css";
+
+
+:root {
+  /* font vars */
+  --font-family: 'LXGW WenKai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-code: Consolas, Monaco, 'LXGW WenKai', 'Andale Mono', 'Ubuntu Mono', monospace;
+
+  /* transition vars */
+  --t-transform: 0.3s ease;
+
+  /* override element-plus vars */
+  --el-text-color-secondary: var(--admin-color-800);
+  --el-border-color-lighter: var(--admin-color-200);
+  --el-fill-color-light: var(--admin-color-100);
+  --el-border-color: var(--admin-color-200);
+}
+
+.shiki {
+  line-height: 1rem;
+}
